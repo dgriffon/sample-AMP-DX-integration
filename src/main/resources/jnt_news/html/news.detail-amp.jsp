@@ -16,7 +16,6 @@
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
-<template:addResources type="css" resources="bootstrapComponents.css"/>
 <c:if test="${!empty jcr:getParentOfType(renderContext.mainResource.node, 'jnt:page')}">
     <c:url value='${url.base}${jcr:getParentOfType(renderContext.mainResource.node, "jnt:page").path}.html' var="action"/>
 </c:if>
@@ -43,7 +42,14 @@
         ${newsDesc.string}
     </div>
     <c:if test="${! empty image}">
-        <figure><img src="<c:url value="${image.node.url}" context="/"/>" alt="${image.node.displayableName}"></figure>
+        <c:set var="width" value="${image.node.properties['j:width'].long}"/>
+        <c:set var="height" value="${image.node.properties['j:height'].long}"/>
+        <figure><amp-img src="<c:url value="${image.node.url}" context="/"/>" width="${width}" height="${height}">
+            <noscript>
+                <img src="<c:url value="${image.node.url}" context="/"/>" alt="${image.node.displayableName}">
+            </noscript>
+        </amp-img>
+        </figure>
     </c:if>
 
 </article>
