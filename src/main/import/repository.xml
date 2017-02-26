@@ -15,13 +15,16 @@
                     <contents jcr:primaryType="jnt:contentFolder"/>
                     <news j:hiddenTemplate="false" jcr:primaryType="jnt:template">
                         <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
                                  jcr:primaryType="jnt:translation"
                                  jcr:title="news"/>
                         <amp j:applyOn="jnt:news"
                     j:defaultTemplate="false"
                     j:hiddenTemplate="false"
+                    j:view="bootstrap-acme-space-amp"
                     jcr:primaryType="jnt:contentTemplate">
                             <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
                                     jcr:primaryType="jnt:translation"
                                     jcr:title="news detail AMP"/>
                         </amp>
