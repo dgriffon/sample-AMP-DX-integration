@@ -88,7 +88,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Jahia-Depends>default</Jahia-Depends>
+                        <Jahia-Depends>default, news</Jahia-Depends>
                     </instructions>
                 </configuration>
             </plugin>
