@@ -35,8 +35,12 @@
 
 <article class="news">
 
-    <div class="media-body"><h1>${title.string}</h1> <span class="btn btn-default"><fmt:formatDate
-            value="${newsDate.time}" type="both" dateStyle="full" timeStyle="long" /></span></div>
+    <div class="media-body">
+        <amp-fit-text width="300" height="45" layout="responsive" max-font-size="45">
+            ${title.string}
+        </amp-fit-text>
+        <span class="btn btn-default"><fmt:formatDate
+                value="${newsDate.time}" type="both" dateStyle="full" timeStyle="long" /></span></div>
 
     <div class="media-text-big">
         ${newsDesc.string}

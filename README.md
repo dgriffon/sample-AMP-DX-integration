@@ -18,3 +18,5 @@ template. Its name is **bootstrap-acme-space-amp**. It only contains a main reso
  The tag `<amp-img>` in now used in the news view
  ## Add links in header section
  The **AssetsAMPFilter** adds the links to canonical and amphtml versions of the page
+ ## Make it nicer
+ Use AMP script features and custom styles 
