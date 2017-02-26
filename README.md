@@ -14,3 +14,5 @@ template. Its name is **bootstrap-acme-space-amp**. It only contains a main reso
  of the news 
  ## Render Filter
  A filter named **AssetsAMPFilter** has been added and filters non wanted content from StaticAssetsFilter
+ ## AMP Image tag use
+ The tag `<amp-img>` in now used in the news view
