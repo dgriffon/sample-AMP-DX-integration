@@ -1,4 +1,4 @@
-package org.jahia.module.boostrap.acme.space.amp;
+package org.jahia.modules.digitall.filters;
 
 import org.apache.commons.lang.StringUtils;
 import org.jahia.services.render.RenderContext;
