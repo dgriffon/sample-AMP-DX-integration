@@ -54,11 +54,11 @@
         <groupId>org.jahia.modules</groupId>
         <version>7.0.0.0</version>
     </parent>
-    <artifactId>bootstrap-acme-space-amp</artifactId>
-    <name>bootstrap-acme-space-AMP</name>
+    <artifactId>sample-AMP-DX-integration</artifactId>
+    <name>Sample AMP DX Integration</name>
     <version>1.0-SNAPSHOT</version>    
     <packaging>bundle</packaging>
-    <description>This is a sample integration of AMP content templates</description>
+    <description>This is a sample integration of an AMP content templates</description>
 
     <scm>
         <connection>scm:dummy:uri</connection>
