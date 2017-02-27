@@ -13,7 +13,7 @@ This example is based on news content template of [dx-base-demo-templates](https
 ## Render Filter
  A filter named **AssetsAMPFilter** has been added and filters non wanted content from StaticAssetsFilter
  
- ## AMP Image tag use
+## AMP Image tag use
  The tag `<amp-img>` in now used in the news view
 
  ## Add links in header section
