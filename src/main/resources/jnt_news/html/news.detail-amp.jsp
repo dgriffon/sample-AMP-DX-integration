@@ -30,8 +30,8 @@
 <jcr:nodeProperty node="${currentNode}" name="date" var="newsDate"/>
 <jcr:nodeProperty var="image" node="${currentNode}" name="image"/>
 
-<a class="btn btn-primary" href="${action}" title="<fmt:message key="acmeBootstrapTemplate.back"/>">
-    <i class="icon-chevron-left icon-white"></i> <fmt:message key="acmeBootstrapTemplate.back"/> </a>
+<a class="btn btn-primary" href="${action}" title="Go to parent page">
+    <i class="icon-chevron-left icon-white"></i>Go to parent page</a>
 
 <article class="news">
 
