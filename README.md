@@ -20,3 +20,6 @@ This example is based on news content template of [dx-base-demo-templates](https
  The **AssetsAMPFilter** adds the links to canonical and amphtml versions of the page
  ## Make it nicer
  Use AMP script features and custom styles 
+ 
+ ## Remove custom scripts
+ Improve the filter to remove js scripts not supported by AMP
