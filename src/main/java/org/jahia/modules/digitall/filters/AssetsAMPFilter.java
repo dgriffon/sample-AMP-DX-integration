@@ -27,9 +27,13 @@ public class AssetsAMPFilter extends AbstractFilter{
         if (StringUtils.equals(resource.getTemplate(), "amp")) {
             String[] lines = out.split(System.getProperty("line.separator"));
             for (int i = 0; i < lines.length; i++) {
+                boolean toRemove = StringUtils.contains(lines[i], "wem.init('") || // Marketing Factory script exec
+                        StringUtils.contains(lines[i], "/wem.min.js''") || // Marketing Factory wem script
+                        StringUtils.contains(lines[i], "<link id=\"staticAssetCSS"); // Jahia Static assets
+                // Add here any other condition that make the line to be removed (custom script .. )
                 if (StringUtils.contains(lines[i], "contextJsParameters")) {
                     lines[i] = lines[i - 1] = lines[i + 1] = MARKER;
-                } else if (StringUtils.contains(lines[i], "<link id=\"staticAssetCSS")) {
+                } else if (toRemove) {
                     lines[i] = MARKER;
                 }
             }
